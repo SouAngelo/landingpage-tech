@@ -1,0 +1,148 @@
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #ddd;
+    box-shadow: 2px 2px 15px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.container-logo{
+    width: 100px;
+    height: 50px;
+}
+
+.container-logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+nav{
+    width: 45%;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li{
+    font-size: 17px;
+    position: relative;
+    font-weight: 600;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: #000000;
+}
+
+nav ul li::before{
+  content:'';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #6299a9;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav ul li:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#check {
+    display: none;
+}
+ 
+.btn{
+    display: none;
+}
+
+
+/* responsive */
+
+@media (max-width: 841px){
+    nav{
+        width: 55%;
+    }
+}
+
+@media (max-width: 737px){
+    header{
+      justify-content: space-between;
+     
+    }
+
+    .container-logo img{
+        margin-left: 15px;
+    }
+
+    nav{
+        width: 5%;
+        margin-right: 15px;
+    }
+    
+
+    #menu{
+        flex-direction: column;
+        transition: .3s ease;
+        position: absolute;
+        top: 63px;
+        left: -50rem;
+        background: #ddd;
+        height: 100vh;
+        max-width: 300px;
+        align-items: center;
+        padding: 20px 0;
+        transition: all .5s;
+        
+    }
+
+    #menu a{
+        border: none;
+        font-size: 22px;
+        border-bottom: 1px solid black;
+        border-radius: 0;
+    }
+
+    #menu li{
+        margin-bottom: 25px;
+    }
+
+    #menu a:hover{
+        background: none;
+        color: rgb(167, 167, 167);
+    }
+
+    .btn{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        right: 0;
+       
+    }
+
+    #nav.active #menu {
+        left: 0;
+    }
+}
+
+@media (max-width: 326px){
+
+}

@@ -1,0 +1,41 @@
+.section-contatos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.section-contatos h1{
+    font-size: 2rem;
+    font-family: 'Edu QLD Beginner', cursive;
+    letter-spacing: 2px;
+}
+
+.redes p{
+    font-size: 17px;
+    text-align: center;
+}
+
+.redes i{
+    margin-top: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.redes i:hover{
+    color: blue;
+}
+
+.icons{
+    display: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 400px){
+    .redes i{
+        font-size: 20px;
+    }
+}

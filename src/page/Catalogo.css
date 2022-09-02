@@ -1,0 +1,181 @@
+.catalogo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.voltar-home{
+    width: 100;
+    height:80px;
+    margin-top: 25px;
+}
+
+.voltar-home i{
+    margin-right: 10px;
+    font-size: 20px;
+    background: blue;
+    padding: 5px;
+    border-radius: 50%;
+    color: black;
+}
+
+.voltar-home a{
+    text-decoration: none;
+    color: black;
+}
+
+.section-produtos2{
+    font-family: 'Edu QLD Beginner', cursive;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-produtos2 h2{
+    font-size: 2.1rem;
+    letter-spacing: 2px;
+}
+
+.container-carousel2{
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.carousel2{
+    width: 90%;
+    height: 250px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;   
+    background: rgba(167, 167, 167, 0.867);
+    border-radius: 10px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+    box-shadow: 10px 10px 20px black;
+}
+
+.carousel2::-webkit-scrollbar{
+    display: none;
+  }
+
+.img3{
+    width: 15.5%;
+    min-width: 170px;
+    height: 130px;
+    flex: none;
+    margin-left: 15px;
+    background: url('https://automacaodevendas.com/wp-content/uploads/sites/6/2018/08/como-tirar-fotos-de-produtos-fundos-infinitos-640x360.jpg') no-repeat center center/cover;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+
+.img3 img{
+  width: 100%;
+  height: 100%;
+}
+
+.content-carousel2{
+    height: 150px;
+    font-family: sans-seryf;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-carousel2 h1{
+    font-size: 15px;
+}
+
+strong{
+    margin-bottom: 15px;
+}
+
+.content-carousel2 a{
+    text-decoration: none;
+    color: #fff;
+    background: green;
+    border-radius: 10px;
+    font-size: 10px;
+    width: 100px;
+    padding: 5px 5px;
+    margin: 0 auto;
+}
+
+.content-carousel2 a:hover{
+    background: #fff;
+    color: black;
+    font-weight: bold;
+}
+
+.arrows2{
+    width: 95%;
+    min-width: 300px;
+    display: flex;
+    font-size: 25px;
+    justify-content: space-between;
+    position: absolute;
+    top: 27%;
+    left: 2.6%;
+   
+  }
+  
+  .arrows2 i{
+    background:green;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #dadada;
+  }
+  
+  .arrows2 i:hover{
+    background: #fff;
+    color: black;
+  }
+  
+  /* responsive */
+
+  @media (max-width: 841px){
+
+    .carousel2{
+        width: 80%;
+    }
+ 
+    .arrows2{
+        width: 89%;
+        left: 6%;
+    }
+ 
+     .img3{
+         width: 200px;
+     }
+ }
+
+ @media (max-width: 450px){
+     .img3{
+         width: 90%;
+     }
+ }
+
+ @media (max-width: 397px){
+    .arrows2{
+        width: 95%;
+        left: 3%;
+    }
+ }
+
+ @media (max-width: 316px){
+    .arrows2{
+        width: 95%;
+        left: -1%;
+    }
+ }
